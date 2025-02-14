@@ -16,7 +16,7 @@ class GitHubCard extends Component {
         this.setState({loading: true, error: null});
      fetch(`https://api.github.com/users/${this.props.username}`, {
         headers: {
-            Authorization: `token ${process.env.REACT_APP_GITHUB_TOKEN}`
+            Authorization: 'token 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'
         }
     })
     .then((response) => response.json())
